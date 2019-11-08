@@ -1,0 +1,21 @@
+# SOBRE O PROJETO
+
+# android/ e ios/: onde ficará os nativos de nossa aplicação
+# node_modules/: as nossas dependências do npm
+# .flowconfig: configurações do flow (se você estiver usando tipagem estática)
+# .watchmanconfig: ferramenta disponível para monitoramento dos arquivos no MacOS
+
+# app.json: determina como nossa aplicação é exibida para o usuário final
+# package.json: mesma coisa do REACTJS, determina as dependências de produção e desenvolvimento.
+
+# Arquivos principais: App.js
+  - index.js: busca um componente e registra ele como o componente global da nossa aplicação.
+  Neste arquivo, temos um "import {AppRegistry} from 'react-native';". Esse AppRegistry é
+  utilizado uma única vez na nossa aplicação e serve para registrar um componente como início 
+  (raíz) da nossa aplicação.
+
+
+
+# Ao rodar a aplicação, o RN abriu uma aba de terminal "Metro Bundler". Esse Bundler é como se
+fosse nosso Webpack Do ReactJS. Ele lê todo o JS escrito na nossa aplicação, unisse tudo em um único
+arquivo JS e transformasse esse arquivo numa forma que a nossa aplicação nativa consiga entender.
